@@ -88,13 +88,18 @@
         <text x="170" y="545">Origin alignment: y=Government ∩ x=θ′ ∩ dy/dx=Data</text>
       </g>
 
-      <!-- Rank-order of gradients (comparative slopes) -->
-      <g opacity="0.6">
-        <path d="M 150 560 L 860 210" stroke="var(--vital)" stroke-width="4" />
-        <path d="M 150 560 L 760 300" stroke="var(--accent)" stroke-width="3" />
-        <path d="M 150 560 L 650 430" stroke="var(--frail)" stroke-width="3" />
-        <text x="880" y="205" fill="var(--vital)" font-size="12">steeper → higher rank (vitality)</text>
-        <text x="660" y="430" fill="var(--frail)" font-size="12">flatter → lower rank (frailty)</text>
+      <!-- Micro-slopes at each node showing rank order -->
+      <g opacity="0.7">
+        <line x1="150" y1="560" x2="180" y2="540" stroke="var(--vital)" stroke-width="3" />
+        <line x1="350" y1="455" x2="380" y2="435" stroke="var(--accent)" stroke-width="3" />
+        <line x1="550" y1="350" x2="580" y2="330" stroke="var(--accent)" stroke-width="3" />
+        <line x1="750" y1="245" x2="780" y2="225" stroke="var(--frail)" stroke-width="3" />
+        <line x1="930" y1="130" x2="960" y2="130" stroke="var(--frail)" stroke-width="3" />
+        <text x="190" y="535" fill="var(--vital)" font-size="11">Data slope</text>
+        <text x="390" y="430" fill="var(--accent)" font-size="11">Energy slope</text>
+        <text x="590" y="325" fill="var(--accent)" font-size="11">Signal slope</text>
+        <text x="790" y="220" fill="var(--frail)" font-size="11">Value slope</text>
+        <text x="970" y="125" fill="var(--frail)" font-size="11">Meaning → flattening</text>
       </g>
 
       <!-- Implications badges -->
@@ -106,12 +111,12 @@
         <text x="655" y="473" text-anchor="middle" fill="var(--frail)">FRAILTY</text>
 
         <rect x="930" y="55" width="110" height="26" rx="6" fill="rgba(255,156,124,0.12)" stroke="var(--frail)" />
-        <text x="985" y="73" text-anchor="middle" fill="var(--frail)">DEATH (gradient → 0)</text>
+        <text x="985" y="73" text-anchor="middle" fill="var(--frail)">DEATH (flattened slope)</text>
       </g>
 
       <!-- Notes around axes -->
       <g font-size="12" fill="var(--muted)">
-        <text x="970" y="635" text-anchor="end">Rank = comparative slope (Nietzsche)</text>
+        <text x="970" y="635" text-anchor="end">Rank = comparative micro-slopes at each node</text>
         <text x="970" y="655" text-anchor="end">dy/dx = Data→Energy→Signal→Value→Meaning</text>
       </g>
 
@@ -119,12 +124,12 @@
 
     <div class="legend">
       <span class="pill"><span class="dot" style="background:var(--accent)"></span><span>Diagonal = Gradient canon</span></span>
-      <span class="pill"><span class="dot" style="background:var(--vital)"></span><span>Steeper slope → vitality / higher rank</span></span>
-      <span class="pill"><span class="dot" style="background:var(--frail)"></span><span>Flatter slope → frailty / lower rank</span></span>
+      <span class="pill"><span class="dot" style="background:var(--vital)"></span><span>Node slope → vitality / higher rank</span></span>
+      <span class="pill"><span class="dot" style="background:var(--frail)"></span><span>Node slope → frailty / flattening</span></span>
       <span class="pill"><span class="dot" style="background:var(--ink)"></span><span>Nodes = Data · Energy · Signal · Value · Meaning</span></span>
     </div>
 
-    <p class="note">Read vertically for <strong>Scaling</strong> (Government→Prebiotic→Botanical→Animal/Man→Enterprise), horizontally for <strong>Fractal</strong> recursion (θ′→θ→Σ→h(t)→ΔS), and diagonally for the <strong>Gradient</strong> (Data→Energy→Signal→Value→Meaning). The intercept co-locates <em>Government</em> (y), <em>θ′</em> (x), and <em>Data</em> (dy/dx) without duplicating labels.</p>
+    <p class="note">Read vertically for <strong>Scaling</strong> (Government→Prebiotic→Botanical→Animal/Man→Enterprise), horizontally for <strong>Fractal</strong> recursion (θ′→θ→Σ→h(t)→ΔS), and diagonally for the <strong>Gradient</strong> (Data→Energy→Signal→Value→Meaning). Each node carries its own micro-slope with rank order. Death = flattening (slope → 0), never higher than vitality.</p>
 
     <div class="footnotes">
       <p><strong>Footnotes</strong></p>
